@@ -1,0 +1,105 @@
+@use 'sass:color';
+$test: #fa0000;
+$color--white: #fff;
+
+$color--white-80: rgba($color--white, .8);
+$color--white-50: rgba($color--white, .5);
+$color--white-30: rgba($color--white, .3);
+$color--white-10: rgba($color--white, .1);
+
+$color--black: #111;
+
+$color--black-white-10: color.mix($color--white, $color--black, $weight: 5%);
+
+$color--black-white-20: color.mix($color--white, $color--black, $weight: 10%);
+$color--black-white-40: color.mix($color--white, $color--black, $weight: 40%);
+$color--black-white-60: color.mix($color--white, $color--black, $weight: 60%);
+$color--black-white-70: color.mix($color--white, $color--black, $weight: 70%);
+$color--black-white-80: color.mix($color--white, $color--black, $weight: 80%);
+$color--black-white-90: color.mix($color--white, $color--black, $weight: 90%);
+$color--black-white-95: color.mix($color--white, $color--black, $weight: 95%);
+$color--black-white-98: color.mix($color--white, $color--black, $weight: 98%);
+
+$color--primary: #1929bb;
+
+$color--primary-black-70: color.mix(#000, $color--primary, $weight: 70%);
+$color--primary-black-40: color.mix(#000, $color--primary, $weight: 40%);
+$color--primary-white-10: color.mix($color--white, $color--primary, $weight: 10%);
+$color--primary-white-30: color.mix($color--white, $color--primary, $weight: 30%);
+$color--primary-white-50: color.mix($color--white, $color--primary, $weight: 50%);
+$color--primary-white-80: color.mix($color--white, $color--primary, $weight: 80%);
+$color--primary-white-95: color.mix($color--white, $color--primary, $weight: 95%);
+
+$color--secondary: #9E07FA;
+
+$color--secondary-black-70: color.mix(#000, $color--secondary, $weight: 70%);
+$color--secondary-black-40: color.mix(#000, $color--secondary, $weight: 40%);
+$color--secondary-white-15: color.mix($color--white, $color--secondary, $weight: 15%);
+$color--secondary-white-30: color.mix($color--white, $color--secondary, $weight: 30%);
+$color--secondary-white-50: color.mix($color--white, $color--secondary, $weight: 50%);
+$color--secondary-white-80: color.mix($color--white, $color--secondary, $weight: 80%);
+$color--secondary-white-95: color.mix($color--white, $color--secondary, $weight: 95%);
+
+$color--error: #E03A15;
+
+$color--error-white-50: color.mix($color--white, $color--error, $weight: 50%);
+$color--error-white-80: color.mix($color--white, $color--error, $weight: 80%);
+$color--error-white-95: color.mix($color--white, $color--error, $weight: 95%);
+
+$color--accent: #E0D815;
+
+$color--accent-white-50: color.mix($color--white, $color--accent, $weight: 50%);
+$color--accent-white-80: color.mix($color--white, $color--accent, $weight: 80%);
+$color--accent-white-95: color.mix($color--white, $color--accent, $weight: 95%);
+
+$color--success: #0CA74A;
+
+$color--success-white-50: color.mix($color--white, $color--success, $weight: 50%);
+$color--success-white-80: color.mix($color--white, $color--success, $weight: 80%);
+$color--success-white-95: color.mix($color--white, $color--success, $weight: 95%);
+
+$colors: (
+  white: $color--white,
+  white-80: $color--white-80,
+  white-50: $color--white-50,
+  white-30: $color--white-30,
+  white-10: $color--white-10,
+  black: $color--black,
+  black-white-10: $color--black-white-10,
+  black-white-20: $color--black-white-20,
+  black-white-40: $color--black-white-40,
+  black-white-60: $color--black-white-60,
+  black-white-70: $color--black-white-70,
+  black-white-80: $color--black-white-80,
+  black-white-90: $color--black-white-90,
+  black-white-95: $color--black-white-95,
+  black-white-98: $color--black-white-98,
+  primary: $color--primary,
+  primary-black-70: $color--primary-black-70,
+  primary-black-40: $color--primary-black-40,
+  primary-white-10: $color--primary-white-10,
+  primary-white-30: $color--primary-white-30,
+  primary-white-50: $color--primary-white-50,
+  primary-white-80: $color--primary-white-80,
+  primary-white-95: $color--primary-white-95,
+  secondary: $color--secondary,
+  secondary-black-70: $color--secondary-black-70,
+  secondary-black-40: $color--secondary-black-40,
+  secondary-white-15: $color--secondary-white-15,
+  secondary-white-30: $color--secondary-white-30,
+  secondary-white-50: $color--secondary-white-50,
+  secondary-white-80: $color--secondary-white-80,
+  secondary-white-95: $color--secondary-white-95,
+  error: $color--error,
+  error-white-50: $color--error-white-50,
+  error-white-80: $color--error-white-80,
+  error-white-95: $color--error-white-95,
+  accent: $color--accent,
+  accent-white-50: $color--accent-white-50,
+  accent-white-80: $color--accent-white-80,
+  accent-white-95: $color--accent-white-95,
+  success: $color--success,
+  success-white-50: $color--success-white-50,
+  success-white-80: $color--success-white-80,
+  success-white-95: $color--success-white-95,
+);

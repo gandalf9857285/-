@@ -1,0 +1,203 @@
+:root {
+  --container-max: 100%;
+  --container-max-header-footer: 100%;
+  --container-padding: 16px;
+  --font-size--xl: 20px;
+  --font-size--lg: 16px;
+  --font-size--md: 14px;
+  --font-size--sm: 12px;
+  --font-size--h1: 110px;
+  --font-size--h2: 64px;
+  --font-size--h3: 40px;
+  --font-size--h4: 40px;
+  --font-size--h5: 24px;
+  --font-size--icon-xs: 16px;
+  --font-size--icon-sm: 20px;
+  --font-size--icon-md: 24px;
+  --font-size--icon-lg: 28px;
+  --font-size--icon-xl: 32px;
+  --line-height--primary: 1.4;
+  --line-height--secondary: 1.6;
+  --layout-padding-bottom: 40px;
+
+  @include generate-color-root-variables;
+  @include responsive(md) {
+    --container-padding: 32px;
+    --layout-padding-bottom: 60px;
+  }
+  @include responsive(xl) {
+    --container-max: #{$breakpoint--xl};
+    --container-padding: 56px;
+    --layout-padding-bottom: 100px;
+  }
+}
+
+html {
+  font-family: $font-primary;
+  font-weight: 600;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 800;
+}
+
+h1,
+.h1 {
+  font-size: 32px;
+  line-height: 48px;
+
+  @include responsive(md) {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  @include responsive(lg) {
+    font-size: 56px;
+    line-height: 84px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 24px;
+  line-height: 36px;
+
+  @include responsive(md) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  @include responsive(lg) {
+    font-size: 44px;
+    line-height: 66px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+  line-height: 30px;
+
+  @include responsive(md) {
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 16px;
+  line-height: 24px;
+
+  @include responsive(md) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 14px;
+  line-height: 21px;
+
+  @include responsive(md) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.body-xl {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.body-l {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-m {
+  font-size: 14px;
+  line-height: 20px;
+
+  @include responsive(md) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.body-s {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+  margin-right: auto;
+  margin-left: auto;
+
+  &--footer,
+  &--header {
+    max-width: var(--container-max-header-footer);
+  }
+}
+
+.link {
+  border: unset;
+  text-decoration: none;
+  color: var(--color-white-80);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+
+  &--md {
+    font-size: var(--font-size--md);
+  }
+
+  &--sm {
+    font-size: var(--font-size--sm);
+  }
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.f-grow {
+  flex-grow: 1;
+}
