@@ -51,7 +51,3 @@ docker-compose down
 ```sh
 npm test
 ```
-
-
-
-https://github.com/user-attachments/assets/499e670b-740f-418f-8b75-3e956182ae14
