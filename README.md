@@ -35,7 +35,7 @@ npm run lint
 ### Compile and start docker container
 
 ```sh
-docker-compose up -d --build
+docker-compose -p benches-web up -d --build
 ```
 
 ### Stop docker container
